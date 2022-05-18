@@ -1,0 +1,502 @@
+ body {
+	 width: 1600px;
+ 	font-family: 'Roboto', sans-serif;
+	color: var(--font-color);
+	background-color: var(--background-color) ;
+}
+
+ :root {
+	--white: #ffffff;
+	--black: #000000; 
+ 	--font-color: #212121; /*var(--font-color)*/
+	--accent-color:#2196F3; /*var(--accent-color)*/
+	--footer-color:#2F303A; /*var(--footer-color)*/
+	--background-color:#e5e5e5; /*var(--background-color)*/
+	--team-bcgr-clr:#F5F4FA;
+	--link-color:#757575; /*var(--link-color)*/
+	--hero-color: #2F303A; /*var(--hero-color)*/
+	--button-nonactiv-color:#F5F4FA;
+	--footer-link-color: rgba(255, 255, 255, 0.6) /*var(--footer-link-color)*/
+}
+
+h1, h2, h3, ul, p {
+	margin: 0;
+	padding: 0;  /* !!!!!   ЭТО НАДО ИЛИ НЕТ?   !!!!!*/
+	list-style-type: none;
+}
+
+.header {
+	 display: flex;
+	 align-items: center;
+	 border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.logo {
+	margin-left: 15px;
+
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	text-decoration: none;
+	letter-spacing: 0.03em;
+}
+
+.logo-web {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--accent-color);
+}
+
+.logo-studio {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+
+.logo-studio-footer {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--white)
+}
+
+.nav {}
+
+.nav-link {
+	display: flex;
+	list-style-type: none;
+	margin-left: 93px;
+}
+
+.nav-link .item + .item{
+	margin-left: 50px;
+}
+
+/* .nav-link li {outline: 1px solid red;} */
+
+.nav-link a {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--font-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	text-decoration: none;
+}
+
+.nav-link a:hover, .nav-link a:focus {
+	color: var(--accent-color) ; 
+}
+ 
+.nav-link-studio {}
+
+.nav-link-portfolio {}
+
+.nav-link-contacts {}
+
+.header-link-mail {
+	margin-left: 331px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--link-color);
+
+	text-decoration: none;
+}
+
+.header-link-mail:hover, .header-link-mail:focus {
+	color: var(--accent-color); 
+}
+
+.header-link-tel {
+	margin-left: 50px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--link-color);
+
+	text-decoration: none;
+}
+
+.header-link-tel:hover, 
+.header-link-tel:focus {
+	color: var(--accent-color);
+}
+
+.hero {
+	background-color: var(--hero-color);
+}
+
+.hero .container {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.hero-title {
+	color: var(--white);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.hero-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding: 10px 32px;
+
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+	color: var(--white);
+	
+	cursor: pointer;	
+	border-radius: 4px;
+	border-color: transparent;
+}
+ 
+.hero-button:hover, 
+.hero-button:focus{} 
+
+.hang{
+	display: flex;
+	margin-top: 94px;
+		/* outline: 1px solid red; */
+}
+
+.hang .item {
+	width: 270px;
+}
+
+.hang .item + .item {
+	margin-left: 30px;
+}
+
+.hang-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.hang-desc {
+	margin-top: 10px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--link-color);
+}
+
+.activity {
+	margin-top: 94px;
+		/* outline: 1px solid green; */
+}
+
+.activity-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.activity .list {
+	display: flex;
+	margin-right: auto;
+	justify-content: space-around;
+	/* outline: 1px solid red; */
+}
+
+.activity .list .item {
+	margin-top: 50px;
+}
+
+.activity .list .item img {
+	display: block;
+}
+
+.team {
+	margin-top: 94px;
+	padding-bottom: 94px;
+
+	background-color: var(--team-bcgr-clr) ;
+	/* outline: 1px solid green; */
+}
+
+.team-title {
+	padding-top: 94px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.team-list {
+	display: flex;
+	margin-top: 50px;
+	/* outline: 1px solid red; */
+}
+
+.team-list .item {
+	/* outline: 1px solid gray; */
+	background-color: var(--white);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team-list .item > img{
+ display: block;
+
+}
+
+.team-list .item + .item {
+ margin-left: 30px;
+}
+
+.team-name {
+	margin-top: 30px;
+	text-align: center;
+
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+.team-position {
+	margin-top: 10px;
+	text-align: center;
+
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.03em;
+	color: var(--link-color);
+}
+
+.footer {
+	width: 1600px;
+	background-color: var(--footer-color);
+}
+
+.footer-bloc {
+	margin-left: 215px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.logo-footer {
+	text-decoration: none;
+}
+
+
+.footer-adr-bloc {
+	display: block;
+	margin-top: 20px;
+}
+
+.footer-adr-bloc a {
+	display: block;
+	text-decoration: none;
+}
+.footer-address {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--white);
+}
+
+.footer-link-mail {
+	margin-top: 9px;
+
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--footer-link-color);
+
+	text-decoration: none;
+}
+
+.footer-link-tel {
+	margin-top: 9px;
+
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--footer-link-color);
+
+	text-decoration: none;
+}
+
+.portfolio-button-bloc {
+	display: flex;
+}
+
+.portfolio-button-whole {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--button-nonactiv-color);
+
+	cursor: pointer;
+}
+
+.portfolio-button-web {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--button-nonactiv-color);
+	
+	cursor: pointer;
+	background-color: var(--button-nonactiv-color);
+}
+
+.portfolio-button-app {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--button-nonactiv-color);
+	
+	cursor: pointer;
+
+}
+
+.portfolio-button-design {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--button-nonactiv-color);
+
+	cursor: pointer;
+
+}
+
+.portfolio-button-market {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--button-nonactiv-color);
+
+	cursor: pointer;
+}
+
+.portfolio-button-whole:hover, 
+.portfolio-button-whole:focus {
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+.portfolio-button-web:hover, 
+.portfolio-button-web:focus {
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+
+.portfolio-button-app:hover, 
+.portfolio-button-app:focus {
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+
+.portfolio-button-design:hover, 
+.portfolio-button-design:focus {
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+.portfolio-button-market:hover, 
+.portfolio-button-market:focus {
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+
+.portfolio-projects-bloc {}
+
+.portfolio-projects-bloc ul {
+	list-style-type: none;
+}
+
+.portfolio-project-item {
+	text-decoration: none;
+}
+
+.project-item-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2.0;
+	letter-spacing: 0.06em;
+	color: var(--font-color);
+}
+
+.project-item-attribute {
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	color: var(--link-color);
+}
