@@ -37,14 +37,13 @@ a {text-decoration: none;}
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0 15px;
 	outline: 1px solid green;
 }
 
 .section {
-	padding: 94px 15px;
-	/* justify-content: center; */
+	padding: 94px 0;
 	outline: 1px solid red;
-	
 }
 
 .header {
@@ -55,8 +54,6 @@ a {text-decoration: none;}
 }
 
 .logo {
-	margin-left: 15px;
-
 	font-family: 'Raleway';
 	font-weight: 700;
 	font-size: 26px;
@@ -91,21 +88,17 @@ a {text-decoration: none;}
 	color: var(--white)
 }
 
-.nav {}
-
-.nav-link {
+.nav {
 	display: flex;
 	list-style-type: none;
 	margin-left: 93px;
 }
 
-.nav-link .item + .item{
+.nav .item + .item{
 	margin-left: 50px;
 }
 
-/* .nav-link li {outline: 1px solid red;} */
-
-.nav-link a {
+.nav-link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -117,7 +110,7 @@ a {text-decoration: none;}
 	letter-spacing: 0.02em;
 }
 
-.nav-link a:hover, .nav-link a:focus {
+.nav-link:hover, .nav-link:focus {
 	color: var(--accent-color) ; 
 }
  
@@ -154,13 +147,11 @@ a {text-decoration: none;}
 	color: var(--accent-color);
 }
 
-.hero {  /* ЭТОТ КЛАСС ТОЛЬКО ДЛЯ ЧЁРНОГО ФОНА 1600px width*/
-	background-color: var(--hero-color);
-}
 
-.hero .container {
-	padding-top: 106px;
-	padding-bottom: 106px;
+.hero {  
+	background-color: var(--hero-color);
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
@@ -196,6 +187,7 @@ a {text-decoration: none;}
  
 .hero-button:hover, 
 .hero-button:focus{} 
+
 
 .hang{
 	display: flex;
@@ -240,8 +232,6 @@ a {text-decoration: none;}
 
 .activity-list {
 	display: flex;
-  justify-content: center;
-	/* outline: 1px solid red; */
 }
 
 .activity-list .item {
@@ -272,7 +262,6 @@ a {text-decoration: none;}
 .team-list {
 	display: flex;
 	margin-top: 50px;
-	padding: 0 15px;
 }
 
 .team-list .item {
@@ -347,11 +336,13 @@ a {text-decoration: none;}
 	color: var(--footer-link-color);
 }
 
+
 .portfolio-button-bloc {
 	display: flex;
 	padding-bottom: 16px;
 	justify-content: center;
 	margin-bottom: 34px;
+	/* Так нарисовано на макете */
 }
 
 .portfolio-button-bloc .button + .button {
@@ -391,9 +382,6 @@ a {text-decoration: none;}
 	width: 370px;
 	margin-right: 30px;
 	margin-top: 30px;
-	display: block;
-
-	box-sizing: border-box;
 
 	background-color: var(--white);
 }
