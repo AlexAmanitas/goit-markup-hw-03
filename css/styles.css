@@ -38,12 +38,12 @@ a {text-decoration: none;}
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px;
-	outline: 1px solid green;
+	/* outline: 1px solid green; */
 }
 
 .section {
 	padding: 94px 0;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .header {
