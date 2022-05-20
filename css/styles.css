@@ -189,13 +189,10 @@ a {text-decoration: none;}
 .hero-button:focus{} 
 
 
+
 .hang{
 	display: flex;
 	justify-content: center;
-}
-
-.hang .item {
-	width: 270px;
 }
 
 .hang .item + .item {
