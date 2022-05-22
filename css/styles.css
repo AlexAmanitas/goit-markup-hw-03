@@ -195,10 +195,10 @@ header {
 .hero-button:hover, 
 .hero-button:focus{} 
 
-
 .hero + .section {
 	padding-bottom: 0;
 }
+
 
 .benefits {
 	display: flex;
@@ -241,9 +241,6 @@ header {
 
 .activity-list {
 	display: flex;
-}
-
-.activity-list .item {
 	margin-top: 50px;
 }
 
@@ -254,6 +251,7 @@ header {
 .activity-list .item img {
 	display: block;
 }
+
 
 .team {
 	background-color: var(--team-bcgr-clr) ;
